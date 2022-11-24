@@ -1,18 +1,17 @@
+import React from 'react';
 import './App.css';
+import List from './List';
+import Search from './Search';
 
-function App() {
-  const welcome = {
-    greeting: "Hey",
-    title: "React"
-  }
+const App = () => {
 
-  const getTitle = (title) => title
   return (
-    <div className="App">
-      <h1>{welcome.greeting} {welcome.title}</h1>
-      <h1>Hello {getTitle("my friend")}</h1>
-      <label htmlFor='search'>Search:</label>
-      <input id="search" type="text" />
+    <div className="container">
+      <h1>My hacker stories</h1>
+      <Search/>
+      <hr />
+    <List/>
+    <div className='display-3'>Page 32  Classes</div>
     </div>
   );
 }
