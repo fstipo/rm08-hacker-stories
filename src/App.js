@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const welcome = {
+    greeting: "Hey",
+    title: "React"
+  }
+
+  const getTitle = (title) => title
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{welcome.greeting} {welcome.title}</h1>
+      <h1>Hello {getTitle("my friend")}</h1>
+      <label htmlFor='search'>Search:</label>
+      <input id="search" type="text" />
     </div>
   );
 }
