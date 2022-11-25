@@ -11,7 +11,6 @@ const App = () => {
       <Search/>
       <hr />
     <List/>
-    <div className='display-3'>Page 32  Classes</div>
     </div>
   );
 }
