@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-const Search = () => {
-    const [searchTerm, setSearchTerm] = useState("");
-    const handleChange = (event) => setSearchTerm(event.target.value);
+const Search = (props) => {
+    const handleChange = (event) => props.onSearch(event);
     console.log("Search renders");
+
     return (
         <>
             <label htmlFor='search' className='me-2'>Search:</label>
             <input id="search" type="text" onChange={handleChange} />
-            <p className='display-3'>Searching for <strong>{searchTerm}</strong></p>
+
         </>
     )
 }

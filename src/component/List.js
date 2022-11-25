@@ -1,10 +1,10 @@
 import React from "react"
 
-const List = ({ stories }) => {
+const List = ({ list }) => {
     console.log("List renders");
     return (
         <ul>
-            {stories.map(item => <li key={item.ObjectID}>
+            {list.map(item => <li key={item.ObjectID}>
                 <span>
                     <a href={item.url}>{item.title}</a></span>
                 <span>{item.author}</span>
