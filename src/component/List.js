@@ -1,11 +1,9 @@
 import React from "react"
 
-
-// const List = (props) => {
 const List = ({ stories }) => {
+    console.log("List renders");
     return (
         <ul>
-            {/* {props.stories.map(item => <li key={item.ObjectID}> */}
             {stories.map(item => <li key={item.ObjectID}>
                 <span>
                     <a href={item.url}>{item.title}</a></span>

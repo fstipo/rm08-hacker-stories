@@ -14,4 +14,12 @@ export const list = [{
     points: 5,
     ObjectID: 1,
 },
+{
+    title: "Bootstrap",
+    url: "https://getbootstrap.com/",
+    author: "Tom",
+    num_comments: 10,
+    points: 1,
+    ObjectID: 2,
+},
 ]
