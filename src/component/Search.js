@@ -7,7 +7,7 @@ const Search = (props) => {
     return (
         <>
             <label htmlFor='search' className='me-2'>Search:</label>
-            <input id="search" type="text" onChange={handleChange} />
+            <input id="search" type="text" onChange={handleChange} value={props.search} />
 
         </>
     )
