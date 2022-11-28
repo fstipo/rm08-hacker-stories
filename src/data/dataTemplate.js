@@ -4,7 +4,7 @@ export const list = [{
     author: "Jordan Walke",
     num_comments: 3,
     points: 4,
-    ObjectID: 0,
+    objectID: 0,
 },
 {
     title: "Redux",
@@ -12,7 +12,7 @@ export const list = [{
     author: "Dani Abramov,Andrew Clark",
     num_comments: 2,
     points: 5,
-    ObjectID: 1,
+    objectID: 1,
 },
 {
     title: "Bootstrap",
@@ -20,6 +20,14 @@ export const list = [{
     author: "Tom",
     num_comments: 10,
     points: 1,
-    ObjectID: 2,
+    objectID: 2,
+},
+{
+    title: "Next JS",
+    url: "https://nextjs.org//",
+    author: "Max",
+    num_comments: 4,
+    points: 3,
+    objectID: 3,
 },
 ]

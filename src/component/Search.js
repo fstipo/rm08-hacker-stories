@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Search = (props) => {
-    const handleChange = (event) => props.onSearch(event);
+const Search = ({ search, onSearch }) => {
+    const handleChange = (event) => onSearch(event);
     console.log("Search renders");
 
     return (
         <>
             <label htmlFor='search' className='me-2'>Search:</label>
-            <input id="search" type="text" onChange={handleChange} value={props.search} />
+            <input id="search" type="text" onChange={handleChange} value={search} />
 
         </>
     )

@@ -1,12 +1,20 @@
-import React, { useState }  from 'react';
+import React, { useState,useEffect }  from 'react';
 import './App.css';
 import List from './component/List';
 import Search from './component/Search';
 import { list } from "./data/dataTemplate"
 
 const App = () => {
-  const [searchTerm, setSearchTerm] = useState("React");
-  const handleSearch=(event)=> setSearchTerm(event.target.value)
+  const [searchTerm, setSearchTerm] = useState(localStorage.getItem("search") || "React");
+  
+  useEffect(() => {
+    localStorage.setItem("search",searchTerm)
+  }, [searchTerm])
+
+  const handleSearch=(event)=> {
+    setSearchTerm(event.target.value)
+  }
+  
   const searchStories = list.filter(story=> story.title.toLowerCase().includes(searchTerm.toLowerCase())) 
 
   return (
