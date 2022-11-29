@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Item=({url,title,author,num_comments,points})=> <li>
-    <span><a href={url}>{title}</a></span>
-    <span>{author}</span>
-    <span>{num_comments}</span>
-    <span className='me-2'>{points}</span>
+const Item=({url,title,author,num_comments:comments,points})=><li>
+    <span className='me-2'><a href={url}>{title}</a></span>
+    <span className='me-2'>{author}</span>
+    <span className='me-2'>{comments}</span>
+    <span>{points}</span>
 </li>
 
 const List = ({list}) => {
